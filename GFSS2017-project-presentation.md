@@ -30,8 +30,9 @@ _Show generated code here_
 ### To-do
 
 - [ ] Make pextract2gf code readable and understandable
-- [ ] Add another word category (verbs)
+- [ ] Add verbs and find problems
 - [ ] The type system is semi fixed
 - [ ] Variants are effectively ignored (but included in the serialization)
 - [ ] serialize a Smart Paradigm from pextract paradigm description
 - [ ] make the Smart Paradigm smarter
+- [ ] ... make a Finnic functor and move on to Votic syntax
