@@ -12,6 +12,8 @@ How to start with GF when the only thing I have is full inflection tables for 5 
 6. Have dinner and go home for further work
 7. ... resurrect Votic language by showing cool GF application grammars for the last 10 Votic people
 
+_Draw general work-flow here_
+
 _Show generated code here_
 
 ## pextract2gf
