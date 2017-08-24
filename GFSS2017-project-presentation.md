@@ -10,16 +10,21 @@ A: Automatically generate all GF code by showing the tables to the machine!
 General work-flow:
 
 ```
-    LMF
-     |
-   infl.
-   table --> pextract --> pfile
-                            |
-                           DFDL
-                            |
-                           XML --> GF
-                            |       |
-                           LMF -----|
+      LMF
+  (extensional
+   morphology)
+       |
+   inflection
+     table --> pextract --> paradigm
+                          description
+                               |
+                              DFDL
+                               |
+                              XML ---> GF
+                               |
+                              LMF
+                         (intensional
+                          morphology)
 ```
 
 Practical implementation of the above work-flow:
