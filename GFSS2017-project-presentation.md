@@ -2,7 +2,8 @@
 
 ## Background
 
-How to start with GF when the only thing I have is full inflection tables for 5 nouns?
+Q: How to start with GF when the only thing I have is full inflection tables for 5 nouns?
+A: Automatically generate all GF code by showing the tables to the machine!
 
 General work-flow:
 
