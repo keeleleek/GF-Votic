@@ -23,13 +23,14 @@ General work-flow:
 ```
 
 Practical implementation of the above work-flow:
-1. Use the inflection tables and [pextract](https://github.com/marfors/paradigmextract)
-2. Make a [DFDL](http://dfdlschemas.github.io/) schema that describes the pextract output (see [dfdl-pextract-schema](https://github.com/keeleleek/dfdl-pextract-schema))
-3. Make converter [pextract2gf](https://github.com/keeleleek/pextract2gf) that generates the GF code
-4. Ask Inari for the rest of the code for a mini resource grammar
-5. Use [pextract2gf](https://github.com/keeleleek/pextract2gf) and copy-paste into the mini grammar
-6. Have dinner and go home for further work
-7. ... resurrect Votic language by showing cool GF application grammars for the grandchildren of the last 10 Votic people
+1. Use the inflection tables and the paradigm extraction tool [pextract](https://github.com/marfors/paradigmextract)
+1. Make a [DFDL](http://dfdlschemas.github.io/) schema that describes the pextract output (see [dfdl-pextract-schema](https://github.com/keeleleek/dfdl-pextract-schema))
+1. Make a converter that generates the GF code from the pextract output (see [pextract2gf](https://github.com/keeleleek/pextract2gf))
+1. Ask Inari for the rest of the code for a mini resource grammar
+1. Use [pextract2gf](https://github.com/keeleleek/pextract2gf) and copy-paste the generated code into your mini grammar
+1.1. Feel good that you have gone from inflection table to runnable GF code for the morphology
+1. Have dinner and go home for further work
+1. ... resurrect Votic language by showing cool GF application grammars for the grandchildren of the last 10 Votic people
 
 
 
