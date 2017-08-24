@@ -33,5 +33,5 @@ _Show generated code here_
 - [ ] Add another word category (verbs)
 - [ ] The type system is semi fixed
 - [ ] Variants are effectively ignored (but included in the serialization)
-- [ ] serialize Smart Paradigm 
+- [ ] serialize a Smart Paradigm from pextract paradigm description
 - [ ] make the Smart Paradigm smarter
