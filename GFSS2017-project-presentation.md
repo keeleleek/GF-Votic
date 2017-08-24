@@ -14,7 +14,7 @@ How to start with GF when the only thing I have is full inflection tables for 5 
 
 _Draw general work-flow here_
 
-_Show generated code here_
+_Show [generated code](https://github.com/keeleleek/pextract2gf/tree/master/examples) here_
 
 ## pextract2gf
 
@@ -35,4 +35,5 @@ _Show generated code here_
 - [ ] Variants are effectively ignored (but included in the serialization)
 - [ ] serialize a Smart Paradigm from pextract paradigm description
 - [ ] make the Smart Paradigm smarter
+- [ ] but on the more abstract level using [Lexical Markup Framework](http://www.lexicalmarkupframework.org/)
 - [ ] ... make a Finnic functor and move on to Votic syntax
