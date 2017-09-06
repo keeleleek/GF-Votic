@@ -200,17 +200,17 @@ oper
 
   mkTüttö : Str -> Noun = \tüttö -> 
     case tüttö of {
-      tüt + "t" + ö => mkTüttöConcrete tüt ö ; 
+      tüt + "t" + ö@((-"t")*) => mkTüttöConcrete tüt ö ; 
       _ => Predef.error "Unsuitable lemma for mkTüttö"
     } ;
 
   mkTüttöConcrete : Str -> Str -> Noun = \tüt,ö -> 
     { s = 
       table {
-        NF Sg nominative => tüt + "t" + ö ; 
-        NF Pl nominative => tüt + ö + "d" ; 
-        NF Sg genitive => tüt + ö ; 
-        NF Pl genitive => tüt + "t" + ö + "i" -- ;
+        NF Sg nominative => tüt + "-T-" + ö ; 
+        NF Pl nominative => tüt + "-" + ö + "-D" ; 
+        NF Sg genitive => tüt + "-" + ö ; 
+        NF Pl genitive => tüt + "-T-" + ö + "-I" -- ;
         -- NF Pl genitive => tüt + "t" + ö + "je" ; 
         -- NF Sg partitive => tüt + "t" + ö + "ä" ; 
         -- NF Pl partitive => tüt + "t" + ö + "i" ; 
