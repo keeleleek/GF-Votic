@@ -2,34 +2,12 @@
 resource ResVot = ParamX ** open Prelude,Predef in {
 
 param
-  -- Number = Sg | Pl ;
-  -- Number = singular | plural ; -- todo add type synonyms
+--  Number = Sg | Pl ;
   Case = nominative | genitive | partitive | illative | inessive | elative | allative | adessive | ablative | translative | terminative | comitative ;
   NForm = NF Number Case ;
 
 oper
   Noun : Type = {  s : NForm => Str };
-  
-  -- mkNoun : Str -> Noun = \str -> {
-    -- s = table {
-      -- NF Sg nominative => str + "+sg+nom";
-      -- NF Pl nominative => str + "+pl+nom";
-      -- NF Sg genitive   => str + "+sg+gen";
-      -- NF Pl genitive   => str + "+pl+gen"
-    -- } 
-  -- };
-  
-  -- smart paradigm
-  -- mkNoun : Str -> Noun = \str ->
-    -- case str of {
-      -- _ + "põ" => mkAap str ;
-      -- _ + "kõ" => mkPoikõ (tk 2 str) ;
-      -- _ + "tö" => let tü = take 2 str ;
-                      -- tö = dp 2 str ;
-                   -- in mkTütö tü tö ;
-      -- _        => Predef.error "Doesn't look like a noun >:("
-    -- };
-
 
   mkAapõ : Str -> Noun = \aapõ -> 
     case aapõ of {
@@ -199,7 +177,7 @@ oper
 
   mkTüttö : Str -> Noun = \tüttö -> 
     case tüttö of {
-      tüt + "t" + ö => mkTüttöConcrete tüt ö ; 
+      tüt + "t" + ö@(-(_+"t"+_)) => mkTüttöConcrete tüt ö ; 
       _ => Predef.error "Unsuitable lemma for mkTüttö"
     } ;
 
@@ -238,8 +216,4 @@ oper
 
 -------------------------
 
-
 }
-
--- i -retain ResVot.gf
--- cc -table -unqual mkNoun "eousth"
