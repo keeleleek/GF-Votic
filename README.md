@@ -1,10 +1,12 @@
 # Votic mini resource grammar for the GF RGL
 
-This is a partial Votic mini resource grammar for the [Grammatical Framework](http://grammaticalframework.org/) Resource Grammar Library (RGL).
+This is an incomplete Votic language mini resource grammar for the [Grammatical Framework](http://grammaticalframework.org/) Resource Grammar Library (RGL).
 
-See my GF summer school 2017 [project write-up](https://github.com/keeleleek/GF-Votic/blob/master/GFSS2017-project-presentation.md) for more information on how it was created.
+It contains morphological paradigm functions for some Votic nouns. These functions have been automatically derived from inflection tables using the paradigm extracting tool [pextract](https://github.com/marfors/paradigmextract) that are converted using the [pextract2gf](https://github.com/keeleleek/pextract2gf) tool.
 
-This work depends largely on the paradigm extracting tool [pextract](https://github.com/marfors/paradigmextract) and the convertor [pextract2gf](https://github.com/keeleleek/pextract2gf).
+No high-level morphology functions have been implemented, e.g there is no smart paradigm chooser yet for the ''mkNoun'' function of GF.
+
+See my GF summer school 2017 [project write-up](https://github.com/keeleleek/GF-Votic/blob/master/GFSS2017-project-presentation.md) for more information on how this was created.
 
 __This is work in progress!__
 
